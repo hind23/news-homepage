@@ -1,0 +1,282 @@
+@import url('https://fonts.google.com/specimen/Inter');
+@media (min-width:767px) {
+.h2font
+{
+font-size : 1.6vw;
+color : white;
+}
+.container
+{
+    display: grid;
+   grid-template-areas: 
+    "boxone boxone boxone boxone boxtwo boxtwo"
+    "boxthree boxthree boxfour boxfour boxtwo boxtwo"
+    "boxfive boxsix boxseven boxeight boxnine boxten"
+    ;
+    grid-gap: 10px;
+}
+.box1
+{
+    grid-area: boxone;
+
+}
+.box2
+{
+    grid-area: boxtwo; 
+    
+    text-align: center;
+    
+}
+.box3
+{
+    grid-area: boxthree;
+}
+  
+.box4
+{
+    grid-area: boxfour;
+  
+}
+.box5
+{
+    grid-area: boxfive;
+}
+.box6
+{
+    grid-area: boxsix;
+}
+.box7
+{
+    grid-area: boxseven;
+}
+.box8
+{
+    grid-area: boxeight;
+}
+.box9
+{
+    grid-area: boxnine ;
+}
+.box10
+{
+    grid-area: boxten;
+}
+.h1font
+{
+ font-size: 2vw;
+ color : white;
+}
+
+.pfont
+{
+ font-size: 1.2vw;
+ color : white;
+}
+
+}
+@media (max-width:767px) {
+    .box1
+    {
+        grid-area: boxone;
+    
+    }
+    .box2
+    {
+        grid-area: boxtwo; 
+        
+        text-align: center;
+        
+    }
+    .box3
+    {
+        grid-area: boxthree;
+        text-align: center;
+    }
+      
+    .box4
+    {
+        grid-area: boxfour;
+        text-align: center;
+    }
+    .box5
+    {
+        grid-area: boxfive;
+    }
+    .box6
+    {
+        grid-area: boxsix;
+    }
+    .box7
+    {
+        grid-area: boxseven;
+    }
+    .box8
+    {
+        grid-area: boxeight;
+    }
+    .box9
+    {
+        grid-area: boxnine ;
+    }
+    .box10
+    {
+        grid-area: boxten;
+    }
+
+
+
+    .container2
+{
+    display: grid;
+ 
+ 
+   grid-template-areas: 
+    "boxone boxone "
+    "boxthree boxthree "
+    "boxfour boxfour "
+    "boxtwo boxtwo"
+    "boxfive boxsix"
+    "boxseven boxeight"
+    "boxnine boxten"
+    ;
+    grid-gap: 10px;
+}
+
+.col1
+{
+    width: 100%;
+}
+
+}
+
+body
+{
+    margin: 15px 20px 0 20px;
+    font-family: 'inter';
+}
+
+
+.box
+{
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+hr
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+div.box2 h1
+{
+    color: hsl(35, 77%, 62%) ;
+}
+
+.box2
+{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button
+{
+    letter-spacing: 0.5vw;
+    padding: 0.8vw;
+    margin-top: 15px;
+    
+    background-color: hsl(5, 85%, 63%);
+    border-color: transparent;
+    color: white;
+}  
+button a
+{
+    text-decoration: none;
+    color: white;
+}
+button:hover
+{
+    background-color: hsl(240, 100%, 5%) ;
+}
+h2.last:hover
+{
+    color: hsl(5, 85%, 63%);
+}
+header
+{
+    display: flex;
+    padding: 0px 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul 
+{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a 
+{
+    padding: 10px 25px;
+    color: hsl(236, 13%, 42%);
+    text-decoration: none;
+    display: block;
+}
+.navbar ul li a:hover
+{
+    color: hsl(35, 77%, 62%);
+}
+.hamburger
+{
+    display: none;
+}
+@media screen and (max-width:1320px) 
+{
+   header
+   {
+    padding: 0px 50px ;
+   } 
+}
+.navbar.active
+{
+    height: 450px;
+}
+@media (max-width : 900px ) {
+    .hamburger
+    {
+        display : block ;
+        cursor: pointer;
+    }
+    .hamburger .line
+    {
+       width: 30px;
+       height: 3px; 
+       margin-bottom: 8px;
+       background-color: black;
+    }
+    .navbar
+    {
+    
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    }
+    .navbar
+    {
+        display: none;
+    }
+    .navbar ul 
+    {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
